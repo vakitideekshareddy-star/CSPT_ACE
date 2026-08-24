@@ -1,0 +1,168 @@
+```{r}
+x <- 10.5
+
+class(x)
+```
+```{r}
+x <- 10
+class(x)
+print(x)
+```
+```{r}
+z<-10L
+class(x)
+z<-as.integer(z)
+class(z)
+print(z)
+```
+```{r}
+x = max(5, 10, 15)
+print(x)
+x = min(5, 10, 15)
+print(x)
+x = sqrt(16)
+print(x)
+x = abs(-4.7)
+print(x)
+x = ceiling(1.4)
+print(x)
+x = floor(1.4)
+print(x)
+```
+```{r}
+a <- 200
+b <- 33
+
+if (b > a) {
+  print("b is greater than a")
+} else if (a == b) {
+  print("a and b are equal")
+} else {
+  print("a is greater than b")
+}
+
+```
+```{r}
+i <- 1
+while (i < 6) {
+  print(i)
+  i <- i + 1
+}
+
+```
+```{r}
+fruits <- c("banana", "apple", "orange")
+# Print fruits
+fruits
+
+```
+```{r}
+numbers <- 1:10
+numbers
+
+```
+```{r}
+thislist <- list("apple", "banana", "cherry")
+thislist[1] <- "blackcurrant"
+
+# Print the updated list
+thislist
+
+```
+```{r}
+thismatrix <- matrix(c(1,2,3,4,5,6), nrow = 3, ncol = 2)
+print(thismatrix)
+# Print the matrix
+thismatrix[1, 2]
+
+```
+```{r}
+# An array with one dimension with values ranging from 1 to 24
+thisarray <- c(1:24)
+thisarray
+
+# An array with more than one dimension
+multiarray <- array(thisarray, dim = c(4, 3, 2))
+print(multiarray)
+multiarray[2, 3, 2]
+
+```
+```{r}
+Data_Frame <- data.frame (
+  Training = c("Strength", "Stamina", "Other"),
+  Pulse = c(100, 150, 120),
+  Duration = c(60, 30, 45)
+)
+
+Data_Frame[1]
+Data_Frame[["Training"]]
+Data_Frame$Training
+
+```
+```{r}
+# Create a factor
+music_genre <- factor(c("Jazz", "Rock", "Classic", "Classic", "Pop", "Jazz", "Rock", "Jazz"))
+
+# Print the factor
+music_genre
+
+```
+```{r}
+for (x in 1:10) {
+  print(x)
+}
+
+```
+```{r}
+fruits <- list("apple", "banana", "cherry")
+
+for (x in fruits) {
+  if (x == "banana") {
+    next                                                        # continue statement
+  }
+  print(x)
+}
+
+```
+```{r}
+x <- c(1, 2, 3, 4, 5)
+y <- c(3, 7, 8, 9, 12)
+
+
+plot(x, y, main="My Graph", xlab="The x-axis", ylab="The y axis")
+
+
+```
+```{r}
+x <- c(1, 2, 3, 4, 5)
+y <- c(3, 7, 8, 9, 12)
+
+
+plot(x, y, type="l", main="My Graph", xlab="The x-axis", ylab="The y axis")
+
+```
+```{r}
+# Create a vector of pies
+x <- c(10,20,30,40)
+# Create a vector of labels
+mylabel <- c("Apples", "Bananas", "Cherries", "Dates")
+# Create a vector of colors
+colors <- c("blue", "yellow", "green", "black")
+# Display the pie chart
+pie(x, label = mylabel, main = "Pie Chart", col = colors)
+# Display the explanation box
+legend("bottomright", mylabel, fill = colors)
+
+```
+```{r}
+x <- c("A", "B", "C", "D")
+y <- c(2, 4, 6, 8)
+
+barplot(y, names.arg = x, width = c(1,2,3,4))
+
+```
+```{r}
+
+```
+
+
